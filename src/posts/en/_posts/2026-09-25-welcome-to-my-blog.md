@@ -1,7 +1,7 @@
 ---
 lng_pair: id_welcome_post
 title: "Welcome to My New Blog"
-author: "Author"
+author: "Dipsan Bhusal"
 category: "General"
 tags: [ "welcome", "technology", "thoughts" ]
 img: "/assets/img/home/home-heading.jpg"

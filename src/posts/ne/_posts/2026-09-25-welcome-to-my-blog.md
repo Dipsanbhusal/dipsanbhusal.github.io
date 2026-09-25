@@ -1,7 +1,7 @@
 ---
 lng_pair: id_welcome_post
 title: "मेरो नयाँ ब्लगमा स्वागत छ"
-author: "Author"
+author: "दिप्सन भुसाल"
 category: "सामान्य"
 tags: [ "स्वागत", "प्रविधि", "विचार" ]
 img: "/assets/img/home/home-heading.jpg"

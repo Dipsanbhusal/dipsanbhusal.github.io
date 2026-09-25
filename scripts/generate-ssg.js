@@ -3,7 +3,7 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 
-const BASE_URL = 'https://khumnath.com.np';
+const BASE_URL = 'https://dipsanbhusal.com.np';
 const DIST_DIR = path.resolve('dist');
 const POSTS_DIR = path.resolve('src/posts');
 const PUBLIC_DIR = path.resolve('public');

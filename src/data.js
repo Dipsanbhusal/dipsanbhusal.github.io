@@ -22,32 +22,30 @@ export const conf = {
       { key: "privacy-policy", icon: "fa fa-shield" },
       { key: "about", icon: "fa fa-user-o" }
     ],
-    side_nav_profile_img_path: "/assets/img/default/profile_pic.jpg",
+    side_nav_profile_img_path: "https://avatars.githubusercontent.com/u/139309612?v=4",
     contacts: true
   }
 };
 
 export const owner = {
   en: {
-    brand: "My Personal Tech Blog & Notes",
+    brand: "Dipsan Bhusal",
     home: {
       top_header_line1: "Thoughts, Notes & Experiments",
-      top_header_line2: "A personal digital space for technology and writing"
+      top_header_line2: "A personal digital space for technology and engineering"
     },
     contacts: [
-      { github: "your-username" },
-      { email: "your-email@example.com" }
+      { github: "Dipsanbhusal" }
     ]
   },
   ne: {
-    brand: "मेरो व्यक्तिगत प्राविधिक ब्लग",
+    brand: "दिप्सन भुसाल",
     home: {
       top_header_line1: "विचार, टिप्पणी र प्रविधि",
       top_header_line2: "मेरो व्यक्तिगत डिजिटल डायरी"
     },
     contacts: [
-      { github: "your-username" },
-      { email: "your-email@example.com" }
+      { github: "Dipsanbhusal" }
     ]
   }
 };
