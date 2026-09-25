@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Hisaab Kitaab</title>
+  <meta name="description" content="Privacy Policy for Hisaab Kitaab daily expense manager. Learn about our local-first architecture, private financial data, and user data protection." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Privacy Policy - Hisaab Kitaab" />
+  <meta property="og:description" content="Local-first daily expense manager and personal finance tracking. Private financial data, transparent advertising disclosures, and complete data ownership." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #edf2f7;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent-green: #10b981;
+      --accent-green-light: #ecfdf5;
+      --accent-purple: #8b5cf6;
+      --accent-purple-light: #f5f3ff;
+      --accent-amber: #f59e0b;
+      --accent-amber-light: #fffbeb;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #090d16;
+        --surface: #111827;
+        --surface-subtle: #1e293b;
+        --border: #334155;
+        --border-subtle: #1e293b;
+        --text-primary: #f8fafc;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --primary-light: rgba(59, 130, 246, 0.12);
+        --accent-green: #34d399;
+        --accent-green-light: rgba(52, 211, 153, 0.12);
+        --accent-purple: #a78bfa;
+        --accent-purple-light: rgba(167, 139, 250, 0.12);
+        --accent-amber: #fbbf24;
+        --accent-amber-light: rgba(251, 191, 36, 0.12);
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-icon {
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 0;
+      flex-wrap: wrap;
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .highlight-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .highlight-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    /* Table of Contents */
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.4rem 1.5rem;
+    }
+
+    .toc-list a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .toc-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Policy Content */
+    .policy-content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .section p {
+      color: var(--text-secondary);
+      margin-bottom: 0.85rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .section ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .section li {
+      margin-bottom: 0.45rem;
+      line-height: 1.6;
+    }
+
+    .section strong {
+      color: var(--text-primary);
+    }
+
+    .info-box {
+      background: var(--surface-subtle);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* Contact Box */
+    .contact-box {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .contact-box p {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 0.65rem 1.5rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background: var(--primary-hover);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+      .toc-card, .meta-bar, .contact-btn {
+        display: none;
+      }
+      .policy-content {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="app-badge">
+        <span class="app-icon">📘</span>
+        <span>Hisaab Kitaab (हिसाब किताब)</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Transparent, local-first daily expense tracking with zero tracking and full user data sovereignty.
+      </p>
+      <div class="meta-bar">
+        <span><strong>Effective Date:</strong> September 14, 2026</span>
+        <span><strong>App Version:</strong> 1.0.1+</span>
+        <span><strong>Architecture:</strong> Local-First &amp; Cloud-Sync Ready</span>
+      </div>
+    </header>
+
+    <!-- Key Principles / Highlights -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon" style="background: var(--primary-light); color: var(--primary);">💾</div>
+        <h3>100% Local-First</h3>
+        <p>All expenses, incomes, items, and settings are stored locally on your device by default.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon" style="background: var(--accent-green-light); color: var(--accent-green);">🛡️</div>
+        <h3>Private Financial Data</h3>
+        <p>Your financial transactions and budgets are private and never shared with advertisers or sold.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon" style="background: var(--accent-purple-light); color: var(--accent-purple);">🔐</div>
+        <h3>Encrypted Backups</h3>
+        <p>Export password-protected AES-encrypted backup files (.hkjson) and secure TLS cloud sync.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon" style="background: var(--accent-amber-light); color: var(--accent-amber);">🗑️</div>
+        <h3>Immediate Deletion</h3>
+        <p>Permanently purge your account, cloud records, and local data anytime with a single tap.</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc-card">
+      <h2>📑 Table of Contents</h2>
+      <ul class="toc-list">
+        <li><a href="#section-1">1. Introduction &amp; Core Philosophy</a></li>
+        <li><a href="#section-2">2. Information We Collect &amp; Store</a></li>
+        <li><a href="#section-3">3. What We Never Do With Your Financial Data</a></li>
+        <li><a href="#section-4">4. Device Permissions Explained</a></li>
+        <li><a href="#section-5">5. Data Security &amp; Encryption</a></li>
+        <li><a href="#section-6">6. Third-Party Services &amp; Advertising</a></li>
+        <li><a href="#section-7">7. Data Retention, Export &amp; Deletion</a></li>
+        <li><a href="#section-8">8. Children's Privacy</a></li>
+        <li><a href="#section-9">9. Changes to This Privacy Policy</a></li>
+        <li><a href="#section-10">10. Contact Us &amp; Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Legal Document Body -->
+    <main class="policy-content">
+      <!-- Section 1 -->
+      <section class="section" id="section-1">
+        <h2>1. Introduction &amp; Core Philosophy</h2>
+        <p>
+          Welcome to <strong>Hisaab Kitaab</strong> ("we," "our," or "the application"). We believe your personal financial transactions represent some of the most private and sensitive information in your digital life.
+        </p>
+        <p>
+          Hisaab Kitaab is built from the ground up as a <strong>local-first</strong> personal finance and daily expense tracker. This means you do not need an account to use the application, and all your records live securely on your physical device. We are dedicated to transparent, honest, and ethical privacy practices.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section" id="section-2">
+        <h2>2. Information We Collect &amp; Store</h2>
+        <p>We strictly limit data collection to what is necessary for providing financial tracking functionality:</p>
+
+        <h3>A. User Financial Entries</h3>
+        <ul>
+          <li><strong>Transaction Records:</strong> Expense and income items, monetary values, date and timestamp, quantities, assigned categories, payment status (paid, unpaid, received, pending), and optional personal notes.</li>
+          <li><strong>Custom Categories &amp; Items:</strong> Custom category labels, chosen colors, icons, and custom item descriptions you create.</li>
+          <li><strong>Budget &amp; Recurring Rules:</strong> Monthly item spending limits, recurring payment rules, and alert dates.</li>
+        </ul>
+
+        <h3>B. Device &amp; Display Preferences</h3>
+        <ul>
+          <li><strong>Localization Settings:</strong> Display language (English, Nepali, Hindi, Bengali), calendar preference (Bikram Sambat BS or Gregorian AD), and active numeral system.</li>
+          <li><strong>UI Preferences:</strong> Active theme mode (Light or Dark), default chart type (Bar or Donut Pie), and custom currency symbols.</li>
+        </ul>
+
+        <h3>C. Optional Google Account Data (Cloud Sync)</h3>
+        <ul>
+          <li><strong>Profile Information:</strong> When you voluntarily choose to sign in with Google, we receive your Google User ID (UID), full name, email address, and profile photo URL.</li>
+          <li><strong>Cloud Database Records:</strong> For authenticated users, your transaction entries and preferences are synchronized to Google Cloud Firestore to facilitate multi-device synchronization and automatic cloud restoration.</li>
+          <li><strong>Guest Users:</strong> If you use the app as a Guest, no identity information is ever requested, collected, or stored in cloud databases.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section" id="section-3">
+        <h2>3. What We Never Do With Your Financial Data</h2>
+        <div class="info-box">
+          <strong>Our Absolute Guarantee:</strong> We never sell, rent, or share your personal financial records, incomes, or budgets. We are an expense manager, not a data broker.
+        </div>
+        <ul>
+          <li><strong>No Financial Data Shared with Advertisers:</strong> Your transactions, income details, custom categories, notes, and receipts remain strictly private. They are never shared with, sold to, or accessible by Google AdMob or any third-party marketing network.</li>
+          <li><strong>No Data Selling or Renting:</strong> We will never sell, lease, rent, trade, or transfer your financial entries or personal records to any marketing agency, data broker, or commercial third party.</li>
+          <li><strong>No Profiling of Financial Habits:</strong> We do not track your purchases or build financial behavior profiles to sell to third parties.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section" id="section-4">
+        <h2>4. Device Permissions Explained</h2>
+        <p>Hisaab Kitaab requests minimal operating system permissions, solely when required for specific user-triggered actions:</p>
+        <ul>
+          <li><strong>Storage / Media Files:</strong> Required only when you choose to export your monthly statements as PDF documents, create a local backup (.hkjson), or select a backup file from your device storage to restore.</li>
+          <li><strong>Notifications:</strong> Required only to trigger local daily expense reminders or notifications for recurring payments you set. No marketing notifications will ever be sent.</li>
+          <li><strong>Internet Access:</strong> Required solely to facilitate optional Google Cloud Firestore synchronization, Google AdMob ad delivery, and verify network status. The app remains 100% operational offline.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section" id="section-5">
+        <h2>5. Data Security &amp; Encryption</h2>
+        <p>We employ multi-layered security controls to protect your personal finance data:</p>
+        <ul>
+          <li><strong>Transmission Security:</strong> All data exchanged between the application and Firebase Cloud servers is encrypted using industry-standard Transport Layer Security (TLS 1.3 / HTTPS).</li>
+          <li><strong>Client-Side AES Encryption:</strong> When you generate a backup file, you can specify a private passphrase. Your data is encrypted on your device using Advanced Encryption Standard (AES). We never store or transmit your backup passphrase.</li>
+          <li><strong>Granular Cloud Access Rules:</strong> Firebase Firestore security rules enforce strict user-level isolation. No user can read, query, or modify another user's financial records.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section" id="section-6">
+        <h2>6. Third-Party Services &amp; Advertising</h2>
+        <p>
+          Hisaab Kitaab integrates with trusted third-party services to support cloud synchronization and sustainable application maintenance:
+        </p>
+
+        <h3>A. Google Firebase (Authentication &amp; Cloud Database)</h3>
+        <p>
+          Used exclusively to power the optional Google Sign-in and encrypted cloud sync features. Firebase complies with international data protection standards (ISO 27001, SOC 1/2/3, GDPR).
+        </p>
+
+        <h3>B. Google AdMob (Advertising Network)</h3>
+        <p>
+          We use <strong>Google AdMob</strong> (Google LLC) to display advertisements in the application. Google AdMob may collect and process certain device information to deliver, personalize (if permitted), and measure ads in accordance with Google's policies:
+        </p>
+        <ul>
+          <li><strong>Device Identifiers:</strong> Advertising ID (e.g., Android AAID) or other app-set device identifiers.</li>
+          <li><strong>Ad Interaction &amp; Diagnostic Data:</strong> Information about ad impressions, clicks, app responsiveness, and crash reports.</li>
+          <li><strong>Coarse Location:</strong> General location estimated from your IP address to serve relevant regional advertisements.</li>
+        </ul>
+        <p>
+          <em>Note:</em> Google AdMob does not have access to your personal financial transactions, income, or category details. You can manage, reset, or opt out of personalized advertising at any time in your Android device settings under <strong>Settings &rarr; Google &rarr; Ads</strong>.
+        </p>
+        <p>
+          For additional details on how Google processes ad data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="section" id="section-7">
+        <h2>7. Data Retention, Export &amp; Complete Account Deletion</h2>
+        <p>You retain full authority over your data at all times:</p>
+        <ul>
+          <li><strong>Unrestricted Export:</strong> You can export your full transaction history at any moment as standard, unencrypted or encrypted JSON (.hkjson) files, or as formatted PDF statements.</li>
+          <li><strong>Immediate Account &amp; Cloud Purge:</strong> You can permanently erase your cloud profile and all associated financial records by going to <em>Settings &rarr; Danger Zone &rarr; Delete Account</em>. This immediately invokes a hard deletion from Google Cloud Firestore.</li>
+          <li><strong>Local Data Reset:</strong> You can wipe all local storage directly in the app settings with a single tap.</li>
+        </ul>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="section" id="section-8">
+        <h2>8. Children's Privacy</h2>
+        <p>
+          Hisaab Kitaab is intended for general audiences and is not directed at children under the age of 13 (or under 16 in certain jurisdictions). We do not knowingly solicit or collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately to have it purged.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="section" id="section-9">
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect modifications in application functionality or legal standards. When revisions occur, the updated policy will be posted with a revised "Effective Date" at the top of this document. Continued use of the application after revisions indicates acceptance of the updated policy.
+        </p>
+      </section>
+
+      <!-- Section 10 -->
+      <section class="section" id="section-10">
+        <h2>10. Contact Us &amp; Support</h2>
+        <p>
+          If you have any questions, feedback, or data privacy requests regarding Hisaab Kitaab, please feel free to contact our development team:
+        </p>
+        <div class="contact-box">
+          <p><strong>Hisaab Kitaab Support Team</strong></p>
+          <p>Email: <a href="mailto:aksharlabstudio2@gmail.com" style="color: var(--primary); font-weight: 600;">aksharlabstudio2@gmail.com</a></p>
+          <a href="mailto:aksharlabstudio2@gmail.com" class="contact-btn">Send Us an Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Hisaab Kitaab. Developed with care by Khumnath. All rights reserved.</p>
+      <p style="margin-top: 0.5rem;">
+        <a href="#top">Back to top &uarr;</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
