@@ -1,0 +1,27 @@
+# this will handle to  hidden folders
+# ignore all starts with .* except .git and so on
+!.git*
+!.editorconfig
+!.well-known
+
+# jekyll Cache
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# OS generated
+ehthumbs.db
+Thumbs.db
+
+# diff files
+*.bak
+#drafts
+_posts/draft*
+assets/img/posts/draft*
+
+node_modules/
+
+yarn.lock
+
+dist/
